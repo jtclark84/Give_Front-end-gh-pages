@@ -1,0 +1,35 @@
+body{
+	#modalBenefits{
+		.modal-content{
+			.modal-header{
+				border-bottom:none !important;
+			}
+			.modal-body{
+				width:100%;
+				font-size:.8em;
+			}
+		}
+	}
+}
+
+body{
+	#signupModal{
+		.modal-content{
+			.modal-header{
+				border-bottom:none !important;
+			}
+			.modal-body{
+				width:100%;
+				font-size:.8em;
+			}
+		}
+	}
+}
+
+#signinModal{
+	.modal-content{
+		.modal-header{
+			border-bottom:none !important;
+		}
+	}
+}

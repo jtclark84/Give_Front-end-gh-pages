@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <title>Give</title>
+    {% include head.html %}
+
+<body>
+    <div id="js-outerWrap" class="u-posRelative  u-fullWidth  outerWrap  js-outerWrap">
+        <div id="js-innerWrap" class="u-posRelative  u-fullWidth  innerWrap  js-innerWrap">
+
+            {% include primary-nav.html %}
+            {% include mobile-nav.html %}
+            {% include sub-nav.html %}
+
+            <div class="screenContent">
+                {% include modal.html %}
+
+                <div class="postArticle  layoutSingleColumn--wide   container-fluid">
+
+                    {{ content }}
+
+                    <div class="masonry__item  col-md-12"><!-- // Search Panel -->
+                        {% include search.html %}
+                    </div>
+
+                    <div class="masonry__item  col-md-12"><!-- // Related Panel -->
+                        {% include related.html %}
+                    </div>
+
+                </div>
+            </div><!-- // Screen content -->
+
+        </div>
+    </div>
+
+    {% include footer-ecfa.html %}
+    {% include footer.html %}
+    {% include footer-scripts.html %}
+</body>
+</html>

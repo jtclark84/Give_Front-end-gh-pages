@@ -1,0 +1,42 @@
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.1/jquery-ui.min.js"></script>
+
+<script>
+$(function() {
+	$('#menu-toggle').click(function(e) {
+	  e.preventDefault();
+	  $('#wrapper').toggleClass('toggled');
+	});
+
+	$('.commentLink').click(function() {
+	  $(this).next().toggle();
+	  return false;
+	});
+
+	$('.tab-btn').click(function() {
+
+		$('.tab-btn').removeClass('on');
+		$(this).addClass('on');
+
+	    tabTarget = $(this).data('target');
+	    $('.cart-tab').removeClass('show');
+	    $('.'+tabTarget).addClass('show');
+	    return false;
+
+	    console.log('tab');
+	});
+
+	$('#billingAddressValue').click(function() {
+    $('#address-billing-current, #address-billing-new').toggleClass('on');
+	});
+
+  $('.bank-explain-trigger').click(function() {
+    $('.bank-explain-wrap').toggleClass('on');
+    return false;
+  });
+
+});
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="{{ site.root }}assets/js/typekit.js"></script>
+<script src="{{ site.root }}assets/bower_components/slick-carousel/slick/slick.min.js"></script>

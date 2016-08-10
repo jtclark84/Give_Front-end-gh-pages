@@ -1,0 +1,16 @@
+// Give Site Front End
+
+@import '../cru-scss/cru';
+@import '../bower_components/slick-carousel/slick/slick.scss';
+@import 'slickstyle';
+@import 'responsive';
+@import 'give';
+@import 'cart';
+@import 'checkout';
+@import 'gift-config';
+@import 'modal';
+
+
+// ********** This fonts scss file is only needed for gh-pages to correct relative links to be able to use icons both remote and local. ********** //
+@import 'fonts';
+// **********  //

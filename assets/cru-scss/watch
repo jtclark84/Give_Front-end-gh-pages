@@ -1,0 +1,3 @@
+#!/bin/sh
+
+sass --watch cru.scss:../../components/page/htmlbase/clientlibs/css/cru.min.css --precision 9
